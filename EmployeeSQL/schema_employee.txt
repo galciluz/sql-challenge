@@ -1,0 +1,36 @@
+employees
+-
+emp_id INTEGER PK
+emp_titleid VARCHAR(5) FK >- Title.title_id
+birthdate DATE
+first_name VARCHAR(255)
+last_name VARCHAR(255)
+salary INTEGER
+
+title
+-
+title_id VARCHAR(5) PK
+title_Name VARCHAR(255)
+
+salary
+-
+emp_id INTEGER PK FK - employees.emp_id
+salary INTEGER
+
+department
+-
+dept_id VARCHAR(4) PK
+dept_Name VARCHAR(255)
+
+dept_manager
+-
+dept_id VARCHAR(4) FK >- department.dept_id
+emp_no INTEGER FK >- employees.emp_id
+(dept_id emp_no) PK
+
+dept_employee
+-
+dept_id VARCHAR(4) FK >- department.dept_id
+emp_no INTEGER FK >- employees.emp_id
+(dept_id emp_no) PK
+
