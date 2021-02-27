@@ -8,7 +8,8 @@ CREATE TABLE "employees" (
     "birthdate" DATE   NOT NULL,
     "first_name" VARCHAR(255)   NOT NULL,
     "last_name" VARCHAR(255)   NOT NULL,
-    "salary" INTEGER   NOT NULL,
+    "sex" VARCHAR(1)   NOT NULL,
+    "hire_date" DATE   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_id"
      )
@@ -48,8 +49,8 @@ CREATE TABLE "dept_manager" (
 );
 
 CREATE TABLE "dept_employee" (
-    "dept_id" VARCHAR(4)   NOT NULL,
     "emp_id" INTEGER   NOT NULL,
+    "dept_id" VARCHAR(4)   NOT NULL,
     "(dept_id" emp_no)   NOT NULL,
     CONSTRAINT "pk_dept_employee" PRIMARY KEY (
         "(dept_id"
@@ -68,9 +69,9 @@ REFERENCES "department" ("dept_id");
 ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_emp_id" FOREIGN KEY("emp_id")
 REFERENCES "employees" ("emp_id");
 
-ALTER TABLE "dept_employee" ADD CONSTRAINT "fk_dept_employee_dept_id" FOREIGN KEY("dept_id")
-REFERENCES "department" ("dept_id");
-
 ALTER TABLE "dept_employee" ADD CONSTRAINT "fk_dept_employee_emp_id" FOREIGN KEY("emp_id")
 REFERENCES "employees" ("emp_id");
+
+ALTER TABLE "dept_employee" ADD CONSTRAINT "fk_dept_employee_dept_id" FOREIGN KEY("dept_id")
+REFERENCES "department" ("dept_id");
 

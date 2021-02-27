@@ -5,7 +5,8 @@ emp_titleid VARCHAR(5) FK >- Title.title_id
 birthdate DATE
 first_name VARCHAR(255)
 last_name VARCHAR(255)
-salary INTEGER
+sex VARCHAR(1)
+hire_date DATE
 
 title
 -
@@ -30,6 +31,6 @@ emp_id INTEGER FK >- employees.emp_id
 
 dept_employee
 -
-dept_id VARCHAR(4) FK >- department.dept_id
 emp_id INTEGER FK >- employees.emp_id
+dept_id VARCHAR(4) FK >- department.dept_id
 (dept_id emp_no) PK
