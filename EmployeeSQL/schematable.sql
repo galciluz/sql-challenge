@@ -43,11 +43,11 @@ CREATE TABLE dept_manager (
 );
 
 CREATE TABLE dept_employee (
-	dept_id VARCHAR(4) NOT NULL,
 	emp_id INTEGER NOT NULL,
-	FOREIGN KEY (dept_id) REFERENCES department(dept_id),
+	dept_id VARCHAR(4) NOT NULL,
 	FOREIGN KEY (emp_id) REFERENCES employees(emp_id),
-	PRIMARY KEY (dept_id, emp_id)
+	FOREIGN KEY (dept_id) REFERENCES department(dept_id),
+	PRIMARY KEY (emp_id, dept_id)
 );
 
 
