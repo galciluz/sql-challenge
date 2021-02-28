@@ -7,23 +7,23 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 
 ### Data Modeling
 
-![ERD employee diagram.png](EmployeeSQL\ERDemployee.png)
+![ERD employee diagram.png](EmployeeSQL/ERDemployee.png)
 
 #### Data Engineering
 
-* Table schema created for each of the six CSV files [\EmployeeSQL\schematable.sql](ERD Employee)
+* Table schema created for each of the six CSV files [Schemata Table](EmployeeSQL/schematable.sql)
 
 #### Data Analysis
 
-* Table query created for data analysis [Query Employee](EmployeeSQL\query.sql)
+* Table query created for data analysis [Query Employee.sql](EmployeeSQL/query.sql)
 
 ### Data Visualization 
-* Created a Jupyter Notebook with analysis and charts [Query Employe](eemployeeplots.ipynb)
+* Created a Jupyter Notebook with analysis and charts [Query Employe.ipynb](eemployeeplots.ipynb)
 
 * Histogram to visualize the most common salary ranges for employees.
 
-![Most commonn salary.png](images\chart_salaryrating.png)
+![Most commonn salary.png](images/chart_salaryrating.png)
 
 * Bar chart of average salary by title.
 
-![average salary by title.png](images\chart_salarymeanbytitle.png)
+![average salary by title.png](images/chart_salarymeanbytitle.png)
