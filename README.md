@@ -1,5 +1,5 @@
 # sql-challenge
- - Employee Database: A Mystery in Two Parts
+# Employee Database: A Mystery in Two Parts
 
 ## Background
 
@@ -7,7 +7,7 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 
 ### Data Modeling
 
-![EmployeeSQL\ERDemployee.png](ERD.png)
+![ERD employee diagram.png](EmployeeSQL\ERDemployee.png)
 
 #### Data Engineering
 
@@ -15,15 +15,15 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 
 #### Data Analysis
 
-* Table query created for data analysis [\EmployeeSQL\query.sql](Query Employee)
+* Table query created for data analysis [Query Employee](EmployeeSQL\query.sql)
 
 ### Data Visualization 
-* Created a Jupyter Notebook with analysis and charts [employeeplots.ipynb](Query Employee)
+* Created a Jupyter Notebook with analysis and charts [Query Employe](eemployeeplots.ipynb)
 
 * Histogram to visualize the most common salary ranges for employees.
 
-![images\chart_salaryrating.png](Most commonn salary.png)
+![Most commonn salary.png](images\chart_salaryrating.png)
 
 * Bar chart of average salary by title.
 
-![images\chart_salaryrating.png](average salary by title.png)
+![average salary by title.png](images\chart_salarymeanbytitle.png)
