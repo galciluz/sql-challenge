@@ -9,16 +9,23 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 
 ![ERD employee diagram.png](EmployeeSQL/ERDemployee.png)
 
-#### Data Engineering
+### Data Engineering
 
-* Table schema created for each of the six CSV files [Schemata Table](EmployeeSQL/schematable.sql)
+* Table schema for each of the six CSV files [Schema Table](EmployeeSQL/schematable.sql)
 
-#### Data Analysis
+### Data Analysis
 
-* Table query created for data analysis [Query Employee.sql](EmployeeSQL/query.sql)
+* Query for data analysis [Query Employee.sql](EmployeeSQL/query.sql)
 
 ### Data Visualization 
-* Created a Jupyter Notebook with analysis and charts [Query Employe.ipynb](eemployeeplots.ipynb)
+
+* Jupyter Notebook to generate a visualization of the data [Query Employe.ipynb](employeeplots.ipynb)
+
+    ** Create a config.py file with the folow information, in order to run the code:
+        host='write name of your host'
+        user='write your user name'
+        pw='write your password'
+        port='write your port number'
 
 * Histogram to visualize the most common salary ranges for employees.
 
