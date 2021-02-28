@@ -21,11 +21,11 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 
 * Jupyter Notebook to generate a visualization of the data [Query Employe.ipynb](employeeplots.ipynb)
 
-    ** Create a config.py file with the folow information, in order to run the code:
-        host='write name of your host'
-        user='write your user name'
-        pw='write your password'
-        port='write your port number'
+    * Create a config.py file with the folow information, in order to run the code:
+        * host='write name of your host'
+        * user='write your user name'
+        * pw='write your password'
+        * port='write your port number'
 
 * Histogram to visualize the most common salary ranges for employees.
 
